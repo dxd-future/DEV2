@@ -52,9 +52,10 @@ body{
     font-size: 20px;
     user-select: none;
     font-family: 'Courier New', Courier, monospace;
-    margin: 0px 15px 5px 15px;
+    margin: 0px 25px 5px 20px;
     color: #00ff00;
-    text-indent: 35px;
+    text-indent: 30px;
+    text-align: justify;
 }
 .test-tags{
     width: 100%;
@@ -71,17 +72,52 @@ body{
 .tag{
     cursor: pointer;
 }
-.tag:hover ~ .tag-info{
-    display: block;
-}
 .tag-info{
-    width: 300px;
+    width: 400px;
     height: 200px;
     border-radius: 10px;
-    border: 1px solid black;
     position: absolute;
     display: none;
-    background-color: rgb(255, 255, 255);
-    top: 190px;
-    left: 380px;
+    background-color: #2f3129;
+    left: 290px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+.tag-information{
+    margin: 0px 20px 0px 20px;
+    font-size: 15px;
+    text-indent: 35px;
+    text-align: justify;
+}
+.test-tag{
+    width: 100px;
+    height: 30px;
+    margin: 20px;
+}
+
+#tag-1:hover ~ #tag-info-1{
+    display: flex;
+    top: 200px;
+}
+#tag-info-1:hover{
+    display: flex;
+    top: 200px;
+}
+
+#tag-2:hover ~ #tag-info-2{
+    display: flex;
+    top: 260px;
+}
+#tag-info-2:hover{
+    display: flex;
+    top: 260px;
+}
+#tag-3:hover ~ #tag-info-3{
+    display: flex;
+    top: 320px;
+}
+#tag-info-3:hover{
+    display: flex;
+    top: 320px;
 }
