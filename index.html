@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevStepByStep</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #editor {
+            height: 100%; /* Задайте высоту редактора */
+            width: 100%;   /* Задайте ширину редактора */
+            font-size: 15px;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+</head>
+<body>
+    <div class="box1">
+        <main class="main1">
+            <div class="tip">
+                <h1 class="title">DevStepByStep</h1>
+                <div class="instructions">
+                    <p class="info">Привет! Ты пришёл сюда и хочешь написать свой первый код? Тогда начни с добавления тегов!</p>
+                    <p class="info">Тег — это метка у контента. Метки объясняют, что это за контент и о чем он.</p>
+                    <p class="info">Но не бойся ты не будешь учить их все, тебе понадобиться всего несколько:</p>
+                </div>
+                <div class="test-tags">
+                    <p class="tag">&ltbutton&gtКнопка&lt/button&gt</p>
+                    <div class="tag-info"></div>
+                    <p class="tag">&ltinput type="text"&gt</p>
+                    <p class="tag">&ltinput type="radio"&gt</p>
+                </div>
+            </div>
+            
+            <div class="table">
+
+            </div>
+        </main>
+        <footer class="footer1">
+            <div id="editor" oninput="a()"></div>
+        </footer>
+    </div>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai"); // Выбор темы
+        editor.session.setMode("ace/mode/html"); // Установка языка
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
