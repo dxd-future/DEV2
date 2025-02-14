@@ -19,26 +19,68 @@
         <main class="main1">
             <div class="tip">
                 <h1 class="title">DevStepByStep</h1>
-                <div class="instructions">
-                    <p class="info">В начале работы тебе необходимо создать структуру приложения, делается это с помощью тегов.</p>
-                    <p class="info">Тег — это метка у контента. Метки объясняют, что это за контент и о чем он.</p>
-                    <p class="info">Но не бойся ты не будешь учить их все, тебе понадобиться всего несколько:</p>
-                </div>
                 <div class="test-tags">
-                    <p class="tag" id="tag-1">&ltbutton&gtКнопка&lt/button&gt</p>
-                    <div class="tag-info" id="tag-info-1">
+                    <div class="tag">
+                        <p class="info">В начале работы тебе необходимо создать структуру приложения, делается это с помощью тегов.</p>
+                        <p class="info">Тег — это метка у контента. Метки объясняют, что это за контент и о чем он.</p>
+                        <p class="info">Но не бойся ты не будешь учить их все, тебе понадобиться всего несколько:</p>
+                    </div>
+                    
+                    <div class="tag">
+                        <p style="color: #f92672; font-size: 20px; margin: 0;"><span style="color: white;">&lt</span>div<span style="color: white;">&gt</span><span style="color: white;">Содержимое</span><span style="color: white;">&lt/</span>div<span style="color: white;">&gt</span></p>
+                        <p class="tag-information">Div — это элемент контейнера, используемый для группировки и упорядочивания тегов на веб-странице.</p>
+                    </div>
+                        
+                    <div class="tag">
+                        <p style="color: #f92672 ;" class="tag">
+                        <span style="color: white;">&lt</span>button<span style="color: white;">&gt</span><span style="color: white;">
+                        Кнопка
+                        </span><span style="color: white;">&lt/</span>button<span style="color: white;">&gt</span>
+                    </p>
                         <button class="test-tag">Кнопка</button>
                         <p class="tag-information">
-                            Кнопка - элемент который позволяет пользователям взаимодействовать с веб-страницей, выполняя определенные действия, такие как отправка формы или выполнение скрипта.
+                            Кнопка(Button) - элемент который позволяет пользователям взаимодействовать с веб-страницей, выполняя определенные действия.
                         </p>
                     </div>
-                    <p class="tag" id="tag-2">&ltinput type="text"&gt</p>
-                    <div class="tag-info" id="tag-info-2">
-                        <input type="text" class="test-tag">
-                    </div>
-                    <p class="tag" id="tag-3">&ltinput type="radio"&gt</p>
-                    <div class="tag-info" id="tag-info-3">
-                        <input type="checkbox" class="test-tag">
+                    
+                    
+
+                        <!-- <p style="color: #f92672 ;" class="tag">
+                        <span style="color: white;">&lt</span>input<span style="color: #64c72e;"> type</span><span style="color: white;">=</span><span style="color: #e6db74;">"text"</span><span style="color: white;">&gt</span><span style="color: white;">
+                        </span><span style="color: white;">&lt/</span>input<span style="color: white;">&gt</span>
+                    </p>
+                        <input class="test-tag" type="text" style="padding: 0px 10px;" placeholder="Введите текст"></input>
+                        <p class="tag-information">
+                            Инпут(input) - элемент, который предназначен для создания текстовых полей, различных кнопок, переключателей и флажков. 
+                        </p> -->
+
+                        <!-- <p style="color: #f92672 ;" class="tag">
+                            <span style="color: white;">&lt</span>input<span style="color: #64c72e;"> type</span><span style="color: white;">=</span><span style="color: #e6db74;">"checkbox"</span><span style="color: white;">&gt</span><span style="color: white;">
+                            </span><span style="color: white;">&lt/</span>input<span style="color: white;">&gt</span>
+                        </p>
+                            <input class="test-tag" type="checkbox" style="padding: 0px 10px;" placeholder="Введите текст"></input>
+                        <p class="tag-information">Инпут(input) - элемент который предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.</p> -->
+
+                        <!-- <p style="color: #f92672 ;" class="tag">
+                            <span style="color: white;">&lt</span>h1<span style="color: white;">&gt</span><span style="color: white;">
+                            Текст
+                            </span><span style="color: white;">&lt/</span>h1<span style="color: white;">&gt</span>
+                        </p>
+                        <h1 class="test-tag">Текст</h1>
+                        <p class="tag-information">Заголовк(h1) - элемент предназначенный для объявления заголовка </p> -->
+                </div>
+                <div class="lvl_panel">
+                    <div class="back_next_lvl">
+                        <button class="switch_lvl_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-left" viewBox="0 0 16 16">
+                                <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
+                              </svg>
+                        </button>
+                        <button class="switch_lvl_btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
+                              </svg>
+                        </button>
                     </div>
                 </div>
             </div>
