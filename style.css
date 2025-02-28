@@ -31,6 +31,7 @@ body{
 .table{
     height: 100%;
     width: 70%;
+    display: flex;
 }
 .title{
     font-family: 'Courier New', Courier, monospace;
@@ -46,13 +47,14 @@ body{
     font-size: 20px;
     user-select: none;
     font-family: 'Courier New', Courier, monospace;
-    margin: 0px 25px 0px 20px;
+    margin: 5px 25px 5px 20px;
     color: #00ff00;
     text-indent: 30px;
     text-align: justify; 
 }
 .test-tags{
     width: 100%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,21 +62,12 @@ body{
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
-.tag-information{
-    margin: 10px 25px 0px 20px;
-    font-size: 20px;
-    text-indent: 35px;
-    text-align: justify;
-    user-select: none;
-    color: #00ff00;
-}
 .test-tag{
     width: 100px;
     height: 30px;
     margin: 10px;
     cursor: pointer;
     user-select: none;
-    color: white;
 }
 .tag{
     margin: 0;
@@ -84,24 +77,22 @@ body{
     width: 100%;
     height: 60px;
     display: flex;
-    justify-content: end;
+    justify-content: space-evenly;
     align-items: center;
-    background-color: rebeccapurple;
     user-select: none;
 }
 .switch_lvl_btn{
     border: 0;
-    border-radius: 20px;
-    width: 40px;
-    height: 40px;
+    border-radius: 30px;
+    width: 45px;
+    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 10px;
-}
-.back_next_lvl{
-    margin-right: 30px;
-    display: flex;
+    border: 1px solid rgb(0, 255, 0);
+    background-color: #202020;
+    cursor: pointer;
 }
 .tag{
     display: flex;
@@ -110,12 +101,19 @@ body{
     flex-direction: column;
     padding: 10px 0px;
     color: red;
+    display: none;
 }
 .tagbox{
     color: #f92672;
     font-size: 20px;
-    margin: 0;
+    margin: 10px 0px 0px 0px;
 }
 .text_white{
     color: white;
+}
+.text_green{
+    color: #aaff00;
+}
+.text_yellow{
+    color: #e6cd4a;
 }
