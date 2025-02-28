@@ -66,6 +66,7 @@ body{
     text-indent: 35px;
     text-align: justify;
     user-select: none;
+    color: #00ff00;
 }
 .test-tag{
     width: 100px;
@@ -73,6 +74,7 @@ body{
     margin: 10px;
     cursor: pointer;
     user-select: none;
+    color: white;
 }
 .tag{
     margin: 0;
@@ -107,4 +109,13 @@ body{
     align-items: center;
     flex-direction: column;
     padding: 10px 0px;
+    color: red;
+}
+.tagbox{
+    color: #f92672;
+    font-size: 20px;
+    margin: 0;
+}
+.text_white{
+    color: white;
 }
