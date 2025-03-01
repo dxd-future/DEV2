@@ -27,15 +27,22 @@
                         </p>
                     </div>
 
-
                     <div class="tag" id="tag3">
+                        <p class="info">Заголовок(h1) - элемент предназначенный для объявления заголовка.</p>
+                        <p class="tagbox">
+                            <span class="text_white">&lt</span>h1<span class="text_green"> class</span><span class="text_white">=</span><span class="text_yellow">"title"</span><span class="text_white">&gt</span><span class="text_white">Текст</span><span style="color: white;">&lt/</span>h1<span style="color: white;">&gt</span>
+                        </p>
+                        <h1 class="test-tag" style="font-size: 30px; cursor: default; width: 200px; text-align: center;">Заголовок</h1>
+                    </div>
+
+                    <div class="tag" id="tag4">
                         <p class="info">Div — это элемент контейнера, используемый для группировки и упорядочивания тегов на веб-странице.</p>
                         <p class="tagbox">
                             <span class="text_white">&lt</span>div <span class="text_green">class</span><span class="text_white">=</span><span class="text_yellow">"box"</span><span class="text_white">&gt</span><span class="text_white">Содержимое</span><span class="text_white">&lt/</span>div<span class="text_white">&gt</span>
                         </p>
                     </div>
                         
-                    <div class="tag" id="tag4">
+                    <div class="tag" id="tag5">
                         <p class="info">Кнопка(Button) - элемент который позволяет пользователям взаимодействовать с веб-страницей, выполняя определенные действия.</p>
                         <p class="tagbox">
                             <span class="text_white">&lt</span>button <span class="text_green">class</span><span class="text_white">=</span><span class="text_yellow">"btn"</span><span class="text_white">&gt</span><span class="text_white">Кнопка</span><span style="color: white;">&lt/</span>button<span style="color: white;">&gt</span>
@@ -43,7 +50,7 @@
                         <button class="test-tag">Кнопка</button>
                     </div>
                     
-                    <div class="tag" id="tag5">
+                    <div class="tag" id="tag6">
                         <p class="info">Тип(type) тега — это атрибут который задаёт тип любому элементу на странице.</p>
                         
                         <p class="tagbox">
@@ -51,7 +58,7 @@
                         </p>
                     </div>
 
-                    <div class="tag" id="tag6">
+                    <div class="tag" id="tag7">
                         <p class="info">Инпут(input) - элемент, который предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.</p>
                         <p class="tagbox">
                             <span class="text_white">&lt</span>input <span style="color: #64c72e;"> type</span><span class="text_white">=</span><span style="color: #e6db74;">"text"</span><span class="text_white">&gt</span><span class="text_white"></span><span class="text_white">&lt/</span>input<span class="text_white">&gt</span>
@@ -59,7 +66,7 @@
                         <input class="test-tag" type="text" style="padding: 0px 10px;" placeholder="Введите текст"></input>
                     </div>
 
-                    <div class="tag" id="tag7"> 
+                    <div class="tag" id="tag8"> 
                         <p class="info">Инпут(input) - элемент который предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.</p>
                         <p class="tagbox">
                             <span class="text_white">&lt</span>input<span style="color: #64c72e;"> type</span><span class="text_white">=</span><span style="color: #e6db74;">"checkbox"</span><span style="color: white;">&gt</span><span class="text_white"></span><span class="text_white">&lt/</span>input<span class="text_white">&gt</span>
@@ -67,29 +74,32 @@
                         <input class="test-tag" type="checkbox" style="padding: 0px 10px;" placeholder="Введите текст"></input>
                     </div>
 
-                    <div class="tag" id="tag8">
-                        <p class="info">Заголовк(h1) - элемент предназначенный для объявления заголовка.</p>
-                        <p class="tagbox">
-                            <span class="text_white">&lt</span>h1<span class="text_white">&gt</span><span class="text_white">Текст</span><span style="color: white;">&lt/</span>h1<span style="color: white;">&gt</span>
-                        </p>
-                        <h1 class="test-tag" style="color: white; font-size: 30px; cursor: default;">Текст</h1>
-                    </div>
+            
                     
                 </div>
 
-                <div class="lvl_panel">
-                        <button class="switch_lvl_btn" id="back_lvl">Назад</button>
-                        <p id="num" style="color: #ffa500; font-size: 20px">1</p>
-                        <button class="switch_lvl_btn" id="next_lvl">Далее</button>
-                </div>
+                
                 
             </div>
-            
             <div class="table">
 
             </div>
-
         </main>
+
+        <div class="run_code">
+            <div class="lvl_panel">
+                <button class="switch_lvl_btn" id="back_lvl">Назад</button>
+                <p class="mini_num" id="num1" ></p>
+                <p class="num"id="num" >1</p>
+                <p class="mini_num" id="num2" >2</p>
+                <button class="switch_lvl_btn" id="next_lvl">Далее</button>
+            </div>
+
+            <div class="run_clear_code_panel">
+                <button class="run_clear_code_btn" id="clear_code_btn">Очистить</button>
+                <button class="run_clear_code_btn" id="run_code_btn">Запустить</button>
+            </div>
+        </div>
 
         <footer class="footer1">
             <div id="editor"></div>
