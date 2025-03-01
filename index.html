@@ -5,13 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DevStepByStep</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        #editor {
-            height: 100%; /* Задайте высоту редактора */
-            width: 100%;   /* Задайте ширину редактора */
-            font-size: 15px;
-        }
-    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
 </head>
 <body>
@@ -24,16 +17,13 @@
                 <div class="test-tags">
 
                     <div class="tag" id="tag1" style="display: flex;">
-                        <p class="info">В начале работы тебе необходимо создать структуру приложения, делается это с помощью тегов.</p>
-                        <p class="info">Тег — это метка у контента. Метки объясняют, что это за контент и о чем он.</p>
-                        <p class="info">Но не бойся ты не будешь учить их все, тебе понадобиться всего несколько:</p>
+                        <p class="info">В начале работы тебе необходимо создать структуру приложения, делается это с помощью тегов. Тег — это метка у контента. Метки объясняют, что это за контент и о чем он. Но прежде чем начать ознакомся с этими самыми тегами.</p>
                     </div>
                     
                     <div class="tag" id="tag2">
                         <p class="info">Класс(class) тега — это атрибут который задаёт имя любому элементу на странице. Подходит любому тегу, в дальнейшем будет необходим.</p>
-                        
                         <p class="tagbox">
-                            <span class="text_white">&lt</span>тег <span class="text_green">class</span><span class="text_white">=</span><span class="text_yellow">"имя"</span><span class="text_white">&gt</span><span class="text_white">Содержимое</span><span class="text_white">&lt/</span>тег<span class="text_white">&gt</span>
+                            <span class="text_white">&lt</span>тег<span class="text_green"> class</span><span class="text_white">=</span><span class="text_yellow">"имя"</span><span class="text_white">&gt</span><span class="text_white">Содержимое</span><span class="text_white">&lt/</span>тег<span class="text_white">&gt</span>
                         </p>
                     </div>
 
@@ -88,31 +78,25 @@
                 </div>
 
                 <div class="lvl_panel">
-                        <button class="switch_lvl_btn" id="back_lvl">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(0, 255, 0)" class="bi bi-caret-left" viewBox="0 0 16 16">
-                                <path d="M10 12.796V3.204L4.519 8zm-.659.753-5.48-4.796a1 1 0 0 1 0-1.506l5.48-4.796A1 1 0 0 1 11 3.204v9.592a1 1 0 0 1-1.659.753"/>
-                              </svg>
-                        </button>
-                        <p id="num" style="color: rgb(0, 255, 0); font-size: 20px">1</p>
-                        <button class="switch_lvl_btn" id="next_lvl">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="rgb(0, 255, 0)" class="bi bi-caret-right" viewBox="0 0 16 16">
-                                <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"/>
-                              </svg>
-                        </button>
+                        <button class="switch_lvl_btn" id="back_lvl">Назад</button>
+                        <p id="num" style="color: #ffa500; font-size: 20px">1</p>
+                        <button class="switch_lvl_btn" id="next_lvl">Далее</button>
                 </div>
+                
             </div>
             
             <div class="table">
 
             </div>
+
         </main>
+
         <footer class="footer1">
             <div id="editor"></div>
         </footer>
+
     </div>
-    <script>
-       
-    </script>
+
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="functions.js"></script>
     <script src="main.js"></script>
