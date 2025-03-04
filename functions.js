@@ -2,8 +2,8 @@ let n = 1;
 let back_lvl = () => {
     if(n > 1){
         n -= 1;
-    document.querySelector(`#tag${n}`).style.display = 'flex';
-    document.querySelector(`#tag${n + 1}`).style.display = 'none';
+        document.querySelector(`#tag${n}`).style.display = 'flex';
+        document.querySelector(`#tag${n + 1}`).style.display = 'none';
     }
     if(n != 1){
         document.querySelector('#num1').textContent = n - 1;
@@ -13,7 +13,7 @@ let back_lvl = () => {
     if(n != 8){
         document.querySelector('#num2').textContent = n + 1;
     }
-    document.querySelector('#num').textContent = n;
+        document.querySelector('#num').textContent = n;     
 
 }
 let next_lvl = () => {
@@ -30,13 +30,11 @@ let next_lvl = () => {
     }else{
         document.querySelector('#num2').textContent = '';
     }
-    document.querySelector('#num').textContent = n;
+        document.querySelector('#num').textContent = n;
 }
 let run_code = () => {
     document.querySelector('.table').innerHTML += `${editor.getValue()}`;
 }
 let clear_code = () => {
-    console.log(1);
-    
     document.querySelector('.table').innerHTML = '';
 }
