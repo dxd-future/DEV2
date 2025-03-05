@@ -33,6 +33,7 @@ let next_lvl = () => {
         document.querySelector('#num').textContent = n;
 }
 let run_code = () => {
+    document.querySelector('.table').innerHTML = '';
     document.querySelector('.table').innerHTML += `${editor.getValue()}`;
 }
 let clear_code = () => {
