@@ -114,7 +114,7 @@
 
                 <h1 class="title">DevStepByStep</h1>
 
-                <div class="test-tags" style="color: #1095d7;">
+                <div class="test-tags">
 
                     <div class="tag" id="tag1" style="display: flex;">
                         <p class="info">В начале работы тебе необходимо создать структуру приложения, делается это с помощью тегов. Тег — это метка у контента. Метки объясняют, что это за контент и о чем он. Но прежде чем начать ознакомся с этими самыми тегами.</p>
@@ -130,7 +130,7 @@
                     <div class="tag" id="tag3">
                         <p class="info">Заголовок(h1) - элемент предназначенный для объявления заголовка.</p>
                         <p class="tagbox">
-                            <span class="text_white">&lt</span>h1<span class="text_green"> class</span><span class="text_white">=</span><span class="text_yellow">"title"</span><span class="text_white">&gt</span><span class="text_white">Текст</span><span style="color: white;">&lt/</span>h1<span style="color: white;">&gt</span>
+                            <span class="text_white">&lt</span>h1<span class="text_green"> class</span><span class="text_white">=</span><span class="text_yellow">"head"</span><span class="text_white">&gt</span><span class="text_white">Текст</span><span style="color: white;">&lt/</span>h1<span style="color: white;">&gt</span>
                         </p>
                         <h1 class="test-tag" style="font-size: 30px; cursor: default; width: 200px; text-align: center; color: white;">Заголовок</h1>
                     </div>
@@ -178,7 +178,10 @@
                     
                 </div>
 
-                
+                <footer class="footer1">
+                    <div id="editor"></div>
+                </footer>
+     
                 
             </div>
             <div class="table">
@@ -188,11 +191,13 @@
 
         <div class="run_code">
             <div class="lvl_panel">
-                <button class="switch_lvl_btn" style="color: #1095d7; border: 1px solid #1095d7;" id="back_lvl">Назад</button>
-                <p class="mini_num" style="color: #1095d7;" id="num1" ></p>
-                <p class="num"id="num" style="color: #1095d7;">1</p>
-                <p class="mini_num" style="color: #1095d7;" id="num2" >2</p>
-                <button class="switch_lvl_btn" style="color: #1095d7; border: 1px solid #1095d7;" id="next_lvl">Далее</button>
+                <button class="switch_lvl_btn" id="back_lvl">Назад</button>
+                    <div class="nums">
+                        <p class="mini_num" id="num1" ></p>
+                        <p class="num"id="num">1</p>
+                        <p class="mini_num" id="num2" >2</p>
+                    </div>
+                <button class="switch_lvl_btn" id="next_lvl">Далее</button>
             </div>
 
             <div class="run_clear_code_panel">
@@ -201,10 +206,7 @@
             </div>
         </div>
 
-        <footer class="footer1">
-            <div id="editor"></div>
-        </footer>
-
+      
     </div>
 
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>

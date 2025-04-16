@@ -35,6 +35,7 @@ let next_lvl = () => {
 let run_code = () => {
     document.querySelector('.table').innerHTML = '';
     document.querySelector('.table').innerHTML += `${editor.getValue()}`;
+    
 }
 let clear_code = () => {
     document.querySelector('.table').innerHTML = '';
