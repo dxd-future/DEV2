@@ -1,6 +1,5 @@
 let n = 1;
 
-
 let back_lvl = () => {
     if(n > 1){
         n--;
@@ -30,6 +29,10 @@ let back_lvl = () => {
 }
 
 let next_lvl = () => {
+    $('.tagbox').innerHTML = '';
+    $('.tagbox').innerHTML += `
+        <button>
+    `;
     if(n < directory.html.length){
         n++;
     }
@@ -55,7 +58,7 @@ let next_lvl = () => {
             `;
         }
     }
-    
+
 }
 
 let update_code = () => {
