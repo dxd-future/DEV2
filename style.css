@@ -2,34 +2,25 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 #editor {
     height: 50%; /* Задайте высоту редактора */
     width: 100%;   /* Задайте ширину редактора */
     font-size: 18px;
 }
-.box1{
-    width: 100%;
-    height: 100vh;
-}
 .main1{
-    width: 100%;
-    height: 93vh;
-    background-color: #ffffff;
+    height: 92vh;
     display: flex;
 }
 .tip{
-    height: 100%;
-    width: 45%;
+    width: 35%;
     background-color: #202020;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;  
-    border-right: 1px solid #555651;
 }
 .table{
-    height: 100%;
-    width: 70%;
+    width: 65%;
 }
 .title{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -37,9 +28,7 @@ body{
     font-weight: 600;
     user-select: none;
     color: white;
-    width: 100%;
-    text-align: center;
-    height: 15%;
+    height: 10%;
     border-bottom: 1px solid #555651;
     margin: 0;
     display: flex;
@@ -49,158 +38,107 @@ body{
 .info{
     font-size: 18px;
     user-select: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-indent: 30px;
-    text-align: justify;
-    line-height: 1.5;
-    height: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    margin: 0 auto;
-    padding: 1rem 2rem;
+    text-align: left;
+    text-indent: 25px;
+    line-height: 1.6;
+    margin: 30px 30px;
 }
 .test-tags{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
-    height: 45%;
+    height: 40%;
 }
 .test-tag{
-    width: 100px;
     height: 30px;
-    margin: 10px;
     cursor: pointer;
     user-select: none;
-}
-.lvl_panel{
-    width: 39%;
-    height: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    user-select: none;
-    border-right: 1px solid #555651;
-    border-top: 1px solid #555651;
-}
-.switch_lvl_btn{
-    border-radius: 5px;
-    width: 100px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid orange;
-    background-color: #202020;
-    cursor: pointer;
-    color: orange;
-    &:hover{
-        background-color: orange;
-        color: #202020;
-        transition: 200ms ease-in;
-    }
 }
 .tag{
     display: flex;
-    justify-content: start;
     align-items: center;
     flex-direction: column;
-    height: 100%;
 }
+.lvl_panel{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    border-top: 1px solid #555651;
+}
+
 .tagbox{
     color: #f92672;
-    height: 10%;
-    font-size: 20px;
-    margin: 0px 0px 0px 0px;
-}
-.text_white{
-    color: white;
-}
-.text_green{
-    color: #aaff00;
-}
-.text_yellow{
-    color: #e6cd4a;
 }
 .num{
     color: #ffa500;
     font-size: 25px;
-    /* width: 10px; */
 }
 .mini_num{
     color: #ffa500;
-    font-size: 14px;
-    /* width: 10px; */
-    /* margin: 0px 25px; */
 }
 .run_code{
-    width: 100%;
     background-color: #202020;
     height: 60px;
-    
-    /* border-top: 1px solid #555651; */
-    border-bottom: 1px solid #555651;
-    display: flex;
+    display: flex;  
     justify-content: space-between;
     align-items: center;
 }
-.run_clear_code_panel{
-    height: 100%;
-    width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.switch_lvl_btn{
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
     user-select: none;
+    background-color: #202020;  
+    cursor: pointer;
+    border: 1px solid orange;
+    color: orange;
+    &:hover{
+        color: black;
+        transition: 150ms ease-in;
+        background-color: orange;
+    }
+    &:active {
+        transition: 0s;
+        background-color: linear-gradient(to bottom, #151515, #252525);
+        border-color: orange;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3); 
+        border: 1px solid orange;
+    }
 }
 .update_code_btn{
     width: 100px;
     height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #202020;
-    margin: 10px;
-    padding: 5px;
-    border-radius: 5px;
+    border-radius: 20px;
+    user-select: none;
+    background-color: #202020;  
     cursor: pointer;
+    margin: 0px 30px;
     border: 1px solid #00ff00;
     color: #00ff00;
     &:hover{
         color: black;
-        transition: 100ms ease-in;
+        transition: 150ms ease-in;
         background-color: #00ff00;
     }
     &:active {
-        /* background-color: #202020;
-        color: #00ff00;
-        transition: 10ms; */
-        background-color: linear-gradient(to bottom, #151515, #252525); /* Градиент для эффекта "вдавливания" */
-        border-color: #00cc00; /* Сlightly темнее основного цвета */
-        box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3); /* Внутренняя тень для эффекта нажатия */
+        transition: 0s;
+        background-color: linear-gradient(to bottom, #151515, #252525);
+        border-color: #00ff00;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+        border: 1px solid #00ff00;
     }
     &:disabled {
-        /* background-color: #f0f0f0;
-        color: #999;
-        border-color: #ddd;
+        background-color: #404040;
+        border-color: #303030;
+        color: #606060;
+        box-shadow: none;
         cursor: not-allowed;
-        &:hover {
-            background-color: #f0f0f0;
-        } */
-        background-color: #404040; /* Тёмно-серый фон */
-        border-color: #303030; /* Сlightly менее насыщенная граница */
-        color: #606060; /* Сlightly менее яркий текст */
-        cursor: not-allowed; /* Добавить курсор "запрещено" */
     }
-
 }
 .nums{
     display: flex;
-    flex-direction: row;
     align-items: center;
-    width: 120px;
+    width: 150px;
     justify-content: space-evenly;
 }
