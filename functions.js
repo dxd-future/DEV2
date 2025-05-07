@@ -59,14 +59,14 @@ let next_lvl = () => {
             <${directory.html[n - 1].tag} class="test-tag" type="${directory.html[n - 1].type}">${directory.html[n - 1].tag_content}</${directory.html[n - 1].tag}>
             `;
             document.querySelector('.tagbox').innerHTML += `
-                <span style="color: white;">&lt</span>${directory.html[n - 1].tag}<span style="color: #a6e22e;"> type</span><span style="color: white;">=</span><span style="color: #e6cd4a;">"${directory.html[n - 1].type}"</span><span style="color: white;">&gt</span><span style="color: white;">
+                <span style="color: white;">&lt</span>${directory.html[n - 1].tag}<span style="color: #a6e22e;"><span style="color: #a6e22e;"> class</span><span style="color: white;">=</span><span style="color: #e6cd4a;">"${directory.html[n - 1].class}"</span> type</span><span style="color: white;">=</span><span style="color: #e6cd4a;">"${directory.html[n - 1].type}"</span><span style="color: white;">&gt</span><span style="color: white;">
             `;  
         }else{
             document.querySelector('.tag-container').innerHTML = `
             <${directory.html[n - 1].tag} class="test-tag">${directory.html[n - 1].tag_content}</${directory.html[n - 1].tag}>
             `;
             document.querySelector('.tagbox').innerHTML += `
-                <span style="color: white;">&lt</span>${directory.html[n - 1].tag}<span style="color: white;">&gt</span><span style="color: white;">${directory.html[n - 1].tag_content}</span><span style="color: white;">&lt/</span><span>${directory.html[n - 1].tag}</span><span style="color: white;">&gt</span>
+                <span style="color: white;">&lt</span>${directory.html[n - 1].tag} <span style="color: #a6e22e;"> class</span><span style="color: white;">=</span><span style="color: #e6cd4a;">"${directory.html[n - 1].class}"</span><span style="color: white;">&gt</span><span style="color: white;">${directory.html[n - 1].tag_content}</span><span style="color: white;">&lt/</span><span>${directory.html[n - 1].tag}</span><span style="color: white;">&gt</span>
             `;  
         }
         

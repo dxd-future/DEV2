@@ -9,7 +9,7 @@ document.querySelector('.update_code_btn').addEventListener('click', update_code
 editor.on('change', () => {
     let currentValue = editor.getValue().trim();
     if(currentValue != ''){
-    document.querySelector('.update_code_btn').disabled = false;
+        document.querySelector('.update_code_btn').disabled = false;
     }else{
         document.querySelector('.update_code_btn').disabled = true;
     }
@@ -23,7 +23,7 @@ let directory = {
             info: "В начале работы тебе необходимо создать структуру приложения, делается это с помощью тегов. Тег — это метка у контента. Метки объясняют, что это за контент и о чем он.",
             tag: "",
             tag_content: "",
-            type: ""
+            type: "",
         },
         {
             id: 2,
@@ -37,21 +37,24 @@ let directory = {
             info: "Заголовок (h1) - элемент предназначенный для объявления заголовка.",
             tag: "h1",
             tag_content: "Заголовок",
-            type: ""
+            type: "",
+            class: "title"
         },
         {
             id: 4,
             info: "Div — это элемент контейнера, используемый для группировки и упорядочивания тегов на веб-странице.",
             tag: "",
             tag_content: "Содержимое",
-            type: ""
+            type: "",
+            class: "box"
         },
         {
             id: 5,
             info: "Кнопка (Button) - элемент который позволяет пользователям взаимодействовать с веб-страницей, выполняя определенные действия.",
             tag: "button",
             tag_content: "Кнопка",
-            type: ""
+            type: "",
+            class: "btn"
         },
         {
             id: 6,
@@ -65,14 +68,16 @@ let directory = {
             info: "Инпут (input) type text - элемент, который предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.",
             tag: "input",
             tag_content: "",
-            type: "text"
+            type: "text",
+            class: "input_name"
         },
         {
             id: 8,
             info: "Инпут (input) type checkbox - элемент, который предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.",
             tag: "input",
             tag_content: "",
-            type: "checkbox"
+            type: "checkbox",
+            class: "checkbox_choose"
         }
     ],
     css:[
