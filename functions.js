@@ -1,6 +1,7 @@
 let n = 1;
 
 let back_lvl = () => {
+    document.querySelector('.tagbox').innerHTML = '';    
     if(n > 1){
         n--;
     }
@@ -17,22 +18,27 @@ let back_lvl = () => {
     document.querySelector('#num').textContent = n;
     document.querySelector('.tag-container').innerHTML = '';
     if(directory.html[n - 1].tag != ''){
-        document.querySelector('.tag-container').innerHTML = `
-        <${directory.html[n - 1].tag} class="test-tag">${directory.html[n - 1].tag_content}</${directory.html[n - 1].tag}>
-        `;
-    }
-    if(directory.html[n - 1].type != ''){
-        document.querySelector('.tag-container').innerHTML = `
-        <${directory.html[n - 1].tag} style="width: 30px;" class="test" type="${directory.html[n].types}">${directory.html[n - 1].tag_content}</${directory.html[n - 1].tag}>
-        `;
+        if(directory.html[n - 1].type != ''){
+            document.querySelector('.tag-container').innerHTML = `
+            <${directory.html[n - 1].tag} class="test-tag" type="${directory.html[n - 1].type}">${directory.html[n - 1].tag_content}</${directory.html[n - 1].tag}>
+            `;
+            document.querySelector('.tagbox').innerHTML += `
+                <span style="color: white;">&lt</span>${directory.html[n - 1].tag}<span style="color: #a6e22e;"> type</span><span style="color: white;">=</span><span style="color: #e6cd4a;">"${directory.html[n - 1].type}"</span><span style="color: white;">&gt</span><span style="color: white;">
+            `;  
+        }else{
+            document.querySelector('.tag-container').innerHTML = `
+            <${directory.html[n - 1].tag} class="test-tag">${directory.html[n - 1].tag_content}</${directory.html[n - 1].tag}>
+            `;
+            document.querySelector('.tagbox').innerHTML += `
+                <span style="color: white;">&lt</span>${directory.html[n - 1].tag}<span style="color: white;">&gt</span><span style="color: white;">${directory.html[n - 1].tag_content}</span><span style="color: white;">&lt/</span><span>${directory.html[n - 1].tag}</span><span style="color: white;">&gt</span>
+            `;  
+        }
+        
     }
 }
 
 let next_lvl = () => {
-    $('.tagbox').innerHTML = '';
-    $('.tagbox').innerHTML += `
-        <button>
-    `;
+    document.querySelector('.tagbox').innerHTML = '';    
     if(n < directory.html.length){
         n++;
     }
@@ -50,13 +56,20 @@ let next_lvl = () => {
     if(directory.html[n - 1].tag != ''){
         if(directory.html[n - 1].type != ''){
             document.querySelector('.tag-container').innerHTML = `
-            <${directory.html[n - 1].tag} style="width: 30px;" class="test-tag" type="${directory.html[n - 1].type}">${directory.html[n - 1].tag_content}</${directory.html[n - 1].tag}>
+            <${directory.html[n - 1].tag} class="test-tag" type="${directory.html[n - 1].type}">${directory.html[n - 1].tag_content}</${directory.html[n - 1].tag}>
             `;
+            document.querySelector('.tagbox').innerHTML += `
+                <span style="color: white;">&lt</span>${directory.html[n - 1].tag}<span style="color: #a6e22e;"> type</span><span style="color: white;">=</span><span style="color: #e6cd4a;">"${directory.html[n - 1].type}"</span><span style="color: white;">&gt</span><span style="color: white;">
+            `;  
         }else{
             document.querySelector('.tag-container').innerHTML = `
             <${directory.html[n - 1].tag} class="test-tag">${directory.html[n - 1].tag_content}</${directory.html[n - 1].tag}>
             `;
+            document.querySelector('.tagbox').innerHTML += `
+                <span style="color: white;">&lt</span>${directory.html[n - 1].tag}<span style="color: white;">&gt</span><span style="color: white;">${directory.html[n - 1].tag_content}</span><span style="color: white;">&lt/</span><span>${directory.html[n - 1].tag}</span><span style="color: white;">&gt</span>
+            `;  
         }
+        
     }
 
 }
