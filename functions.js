@@ -108,6 +108,7 @@ let next_lvl = () => {
         document.querySelector('#num2').textContent = '';
     }
     document.querySelector('.tag-container').innerHTML = '';
+
     if(directory.html[n - 1].tag != ''){
         if(directory.html[n - 1].type != ''){
             document.querySelector('.tag-container').innerHTML = `
@@ -135,3 +136,4 @@ let update_code = () => {
         document.querySelector('.update_code_btn').textContent = "Обновить"
     }
 }
+

@@ -1,8 +1,6 @@
-
-
 let editor = ace.edit("editor");
-editor.setTheme("ace/theme/monokai"); // Выбор темы
-editor.session.setMode("ace/mode/html"); // Установка языка
+editor.setTheme("ace/theme/monokai");
+editor.session.setMode("ace/mode/html");
 
 document.querySelector('#back_lvl').addEventListener('click', back_lvl);
 document.querySelector('#next_lvl').addEventListener('click', next_lvl);
@@ -22,64 +20,67 @@ let directory = {
     html:[
         {
             id: 1,
-            info: "В начале работы тебе необходимо создать структуру приложения, делается это с помощью тегов. Тег — это метка у контента. Метки объясняют, что это за контент и о чем он.",
+            info: "А вот и первый уровень. На нем ты будешь использовать язык гипертекстовой разметки HTML, он нужен что бы создать структуру страницы. Также ты ознакомишься с первыми тегами, они представляют главные элементы для взаимодействия со страницей",
             tag: "",
             tag_content: "",
             type: "",
+            class: ""
         },
         {
             id: 2,
-            info: "Класс (class) тега — это атрибут который задаёт имя любому элементу на странице. Подходит любому тегу, в дальнейшем будет необходим.",
-            tag: "",
-            tag_content: "",
-            type: ""
-        },
-        {
-            id: 3,
-            info: "Заголовок (h1) - элемент предназначенный для объявления заголовка.",
-            tag: "h1",
-            tag_content: "Заголовок",
-            type: "",
-            class: "title"
-        },
-        {
-            id: 4,
-            info: "Div — это элемент контейнера, используемый для группировки и упорядочивания тегов на веб-странице.",
-            tag: "",
-            tag_content: "Содержимое",
-            type: "",
-            class: "box"
-        },
-        {
-            id: 5,
-            info: "Кнопка (Button) - элемент который позволяет пользователям взаимодействовать с веб-страницей, выполняя определенные действия.",
+            info: "Кнопка - наверно самый распрастранённый тег, как не сложно догадаться на неё можно нажать и тогда что то произойдет.",
             tag: "button",
             tag_content: "Кнопка",
             type: "",
-            class: "btn"
+            class: "btn_test"
+        },
+        {
+            id: 3,
+            info: "",
+            tag: "",
+            tag_content: "",
+            type: "",
+            class: ""
+        },
+        {
+            id: 4,
+            info: "",
+            tag: "",
+            tag_content: "",
+            type: "",
+            class: ""
+        },
+        {
+            id: 5,
+            info: "",
+            tag: "",
+            tag_content: "",
+            type: "",
+            class: ""
         },
         {
             id: 6,
-            info: "Тип (type) тега — это атрибут который задаёт тип любому элементу на странице.",
+            info: "",
             tag: "",
             tag_content: "",
-            type: ""
+            type: "",
+            class: ""
         },
         {
             id: 7,
-            info: "Инпут (input) type text - элемент, который предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.",
-            tag: "input",
+            info: "",
+            tag: "",
             tag_content: "",
-            type: "text",
-            class: "input_name"
+            type: "",
+            class: ""
         },
         {
             id: 8,
-            info: "Инпут (input) type checkbox - элемент, который предназначен для создания текстовых полей, различных кнопок, переключателей и флажков.",
-            tag: "input",
+            info: "",
+            tag: "",
             tag_content: "",
-            type: "checkbox",
-            class: "checkbox_choose"
+            type: "",
+            class: ""
         }
     ],
     css:[
