@@ -1,9 +1,54 @@
-let n = 1;
+let toHTML = ()=>{
+    // document.querySelector('.main_menu').style.display = 'none';
+    // document.querySelector('#box1').style.display = 'block';
+    // document.querySelector('.box').innerHTML += `
+    // <button class="btnNextCss" type="button">NextLVL</button>
+    // `;
+    // const btnUnlockCss = document.querySelector('.btnNextCss')
 
+    // btnUnlockCss.addEventListener('click', ()=>{
+    //     document.querySelector('.box').classList.add('hidden')
+    //     document.querySelector('.box1').classList.remove('hidden')
+    //     document.querySelector('.btnlvl2').disabled = false;
+    // })
+}
+let toCSS = ()=>{
+    // document.querySelector('.main_menu').style.display = 'none';
+    // document.querySelector('#box2').style.display = 'block';
+    // document.querySelector('.box3').innerHTML = `
+    // <button class="btnNextJs" type="button">NextLVL</button>
+    // `;
+    // const btnUnlockJs = document.querySelector('.btnNextJs')
+
+    // btnUnlockJs.addEventListener('click', ()=>{
+    //     document.querySelector('.box3').classList.add('hidden')
+    //     document.querySelector('.box1').classList.remove('hidden')
+    //     document.querySelector('.btnlvl3').disabled = false;
+    // })
+}
+let toJS = ()=>{
+    // document.querySelector('.maim_menu').style.display = 'none';
+    // document.querySelector('#box').style.display = 'flex';
+    // document.querySelector('.box4').innerHTML = `
+    // <button class="btnBackMenu" type="button">Back Menu</button>
+    // `;
+    // const btnBackToMenu = document.querySelector('.btnBackMenu')
+
+    // btnBackToMenu.addEventListener('click', ()=>{
+    //     document.querySelector('.box4').classList.add('hidden')
+    //     document.querySelector('.box1').classList.remove('hidden')
+    // })
+}
+
+let n = 1;
 let back_lvl = () => {
+    
     document.querySelector('.tagbox').innerHTML = '';    
-    if(n > 1){
+    if(n >= 1){
         n--;
+    }
+    if(n == 0){
+        window.location = 'http://127.0.0.1:5501/index.html';
     }
     document.querySelector('.info').textContent = directory.html[n - 1].info;
     document.querySelector('#num').textContent = n;
@@ -11,7 +56,7 @@ let back_lvl = () => {
         document.querySelector('#num1').textContent = n - 1;
     }else{
         document.querySelector('#num1').textContent = '';
-    }
+    }   
     if(n != directory.html.length){
         document.querySelector('#num2').textContent = n + 1;
     }
@@ -36,14 +81,24 @@ let back_lvl = () => {
         
     }
 }
-
 let next_lvl = () => {
+    
+    if(n == directory.html.length){
+        // document.querySelector('#box1').style.display = 'none';
+        // document.querySelector('.main_menu').style.display = 'block';
+        window.location = 'http://127.0.0.1:5501/index.html';
+        // document.querySelector('.btnlvl2').disabled = false;
+        // document.querySelector('.logo').innerHTML = `Поздравляем! Ты прошел сюда уровень по 1 по HTML, скорее переходи на уровень 2 по CSS`
+    }
     document.querySelector('.tagbox').innerHTML = '';    
     if(n < directory.html.length){
         n++;
     }
     document.querySelector('#num').textContent = n;
     document.querySelector('.info').textContent = directory.html[n - 1].info;
+    if(n == directory.html.length){
+        document.querySelector('#next_lvl').textContent = "Завершить";
+    }
     if(n != 1){
         document.querySelector('#num1').textContent = n - 1;
     }
@@ -73,7 +128,6 @@ let next_lvl = () => {
     }
 
 }
-
 let update_code = () => {
     document.querySelector('.table').innerHTML = '';
     document.querySelector('.table').innerHTML += `${editor.getValue()}`;

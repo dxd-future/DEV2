@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevStepByStep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <div class="box" id="box1">
+
+        <main class="main1">
+            <div class="tip">
+
+                <h1 class="title">DevStepByStep</h1>
+
+                <div class="test-tags">
+
+                        <p class="info">В начале работы тебе необходимо создать структуру приложения, делается это с помощью тегов. Тег — это метка у контента. Метки объясняют, что это за контент и о чем он.</p>
+                        <div class="tagbox"> </div>
+                        <p class="tag-container"> </p>
+                    
+                </div>
+                    <div id="editor"></div>
+            </div>
+
+            <div class="table">
+
+            </div>
+        </main>
+
+        <div class="run_code">
+            <div class="lvl_panel">
+                <button class="switch_lvl_btn" id="back_lvl">Назад</button>
+                    <div class="nums">
+                        <p class="mini_num" id="num1" ></p>
+                        <p class="num"id="num">1</p>
+                        <p class="mini_num" id="num2" >2</p>
+                    </div>
+                <button class="switch_lvl_btn" id="next_lvl">Далее</button>
+            </div>
+            
+                <button class="update_code_btn" disabled>Запустить</button>
+        </div>
+        
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
+    <script src="functions.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<style>
+.num{
+    color: #ffa500;
+}
+.mini_num{
+    color: #ffa500;
+}
+.switch_lvl_btn{
+    border: 1px solid #ffa500;
+    color: #ffa500;
+    &:hover{
+        background-color: #ffa500;
+    }
+    &:active {
+        border-color: #ffa500;
+        border: 1px solid #ffa500;
+    }
+}
+</style>

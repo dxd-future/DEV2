@@ -1,3 +1,5 @@
+
+
 let editor = ace.edit("editor");
 editor.setTheme("ace/theme/monokai"); // Выбор темы
 editor.session.setMode("ace/mode/html"); // Установка языка

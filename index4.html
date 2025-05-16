@@ -7,44 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main_menu">
-        <header>
-        <div class="WebName">
-            <h1 class="name">
-                DevStepByStep
-            </h1>
-        </div>
-        </header>
-        <main>
-            <div class="con_for_btns">
-                <div class="in_con_position">
-                    <p class="logo">Привет! Ты пришёл сюда и хочешь написать свой первый код? Тогда начнём с выбора уровня!</p>
-                <div class="wrap">
-                    <button  class="btnlvl1"  onclick="window.location = 'http://127.0.0.1:5501/index2.html'">
-                        <h2 class="lvlStage">lvl 1 </h2>
-                        <h1 class="lvlStage">|html </h2>
-                        </button>
-                </div>
-                <div class="wrap">
-                    <div class="locklvl"></div>
-                    <button class="btnlvl2" onclick="window.location = 'http://127.0.0.1:5501/index3.html'">
-                        <h2 class="lvlStage">lvl 2 </h2>
-                        <h1 class="lvlStage">|css</h2>
-                    </button>
-                </div>
-                <div class="wrap">
-                    <div class="locklvl"></div>
-                    <button  class="btnlvl3" onclick="window.location = 'http://127.0.0.1:5501/index4.html'">
-                        <h2 class="lvlStage">lvl 3 </h2>
-                        <h1 class="lvlStage">|js</h2>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-    </div>
-<!-- 
+ 
     <div class="box" id="box1">
 
         <main class="main1">
@@ -81,9 +44,8 @@
                 <button class="update_code_btn" disabled>Запустить</button>
         </div>
         
-    </div> -->
-    
-    <!-- <div class="box" id="box2">
+    </div>
+    <div class="box hidden" id="box2">
         <main class="main1">
             <div class="tip">
 
@@ -118,7 +80,7 @@
                 <button class="update_code_btn" disabled>Запустить</button>
         </div>
     </div>
-    <div class="box" id="box3">
+    <div class="box hidden" id="box3">
   <main class="main1">
             <div class="tip">
 
@@ -152,7 +114,7 @@
             
                 <button class="update_code_btn" disabled>Запустить</button>
         </div>
-    </div> -->
+    </div>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js"></script>
     <script src="functions.js"></script>
@@ -160,3 +122,23 @@
     <!-- <script src="script.js"></script> -->
 </body>
 </html>
+
+<style>
+    .num{
+        color: #ffff00;
+    }
+    .mini_num{
+        color: #ffff00;
+    }
+    .switch_lvl_btn{
+        border: 1px solid #ffff00;
+        color: #ffff00;
+        &:hover{
+            background-color: #ffff00;
+        }
+        &:active {
+            border-color: #ffff00;
+            border: 1px solid #ffff00;
+        }
+    }
+    </style>
