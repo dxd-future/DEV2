@@ -5,6 +5,7 @@ editor.session.setMode("ace/mode/html");
 document.querySelector('#back_lvl').addEventListener('click', back_lvl);
 document.querySelector('#next_lvl').addEventListener('click', next_lvl);
 document.querySelector('.update_code_btn').addEventListener('click', update_code);
+document.querySelector('.btn_ok').addEventListener('click', next_hint);
 
 editor.on('change', () => {
     let currentValue = editor.getValue().trim();

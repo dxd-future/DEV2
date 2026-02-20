@@ -10,6 +10,7 @@ body{
     height: 50%; /* Задайте высоту редактора */
     width: 100%;   /* Задайте ширину редактора */
     font-size: 18px;
+    z-index: 5;
 }
 .main1{
     height: 94%;
@@ -50,6 +51,8 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    z-index: 999;
+    
 }
 .test-tag{
     min-width: 30px;
@@ -121,7 +124,7 @@ body{
         transition: 0s;
         background-color: linear-gradient(to bottom, #151515, #252525);
         border-color: #00ff00;
-        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.3);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
         border: 1px solid #00ff00;
     }
     &:disabled {
@@ -343,7 +346,7 @@ main{
     background-color: #202020;
 }
 .name{
-    color: beige;
+    color: white;
     font-size: 40px bold;
     margin-left: 25px;
     font-family: 'Courier New', Courier, monospace;
@@ -357,4 +360,70 @@ main{
 .btnNextCss{
     width: 100px;
     height: 50px;
+}
+
+.hint{
+    width: 18%;
+    /* height: 15%;  */
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    background-color: white;
+    border-radius: 0px 15px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    font-size: 15px;
+    user-select: none;
+    z-index: 9999;
+}
+
+.shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    z-index: 50;
+    user-select: none;
+}
+
+.hint_text{
+    width: 90%;
+    height: 70%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn_ok{
+    margin-right: 2%;
+    border-radius: 10px;
+    height: 65%;
+    width: 20%;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: 1px solid black;
+    background-color: white;
+    margin: 10px;
+    padding: 3px;
+    &:hover{
+        background-color: rgb(230, 230, 230);
+    }
+
+    &:active {
+        transition: 0s;
+        background-color: linear-gradient(to bottom, #151515, #252525);
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+}
+.btn_ok_container{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
